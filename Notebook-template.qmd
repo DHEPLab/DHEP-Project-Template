@@ -1,0 +1,24 @@
+---
+title: "Notebook Template"
+format: html
+author: "Your Name"
+editor: visual
+---
+
+## Quarto
+
+This is a Quarto document, a successor to [R Markdown](http://rmarkdown.rstudio.com). Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. This chunk should output `"~/data"`, the configured path for a data folder that you might include in your `config.yml` file.
+
+```{r config}
+config <- config::get()
+
+config$path$rawdata
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+```{r source-function}
+source('src/utilities/functions.R')
+```
