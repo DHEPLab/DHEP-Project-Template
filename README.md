@@ -59,8 +59,7 @@ If using Linux or prefer the command line, you will use the HTTPS-based URL from
 Once the project is cloned to your computer, you need to rename the following files with your own names:
 
 - `DHEP-Project-Template.Rproj`, changing `DHEP-Project-Template` to your repository name
-- `notebook-template.qmd`, changing `notebook-template` to the notebook
-  name that you would like for the project's first notebook.
+- `sandbox/Notebook-template.qmd`, changing `Notebook-template` to the notebook name that you would like for the project's first notebook.
 
 ### Local package installation
 
