@@ -32,7 +32,7 @@ install.packages('renv')
 
 ## Quickstart Guide
 
-To use this template, click the green **Use this template** button or you can [click here]() to generate your project. It will ask you to 
+To use this template, click the green **Use this template** button above to generate your project. It will ask you to 
 
 1. Choose the repository's username/organization name, i.e., `your-GH-username`.
 2. Name the repository, i.e., `new-project`.
