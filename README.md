@@ -1,8 +1,8 @@
 # DHEP Project Template
 
-This is a comprehensive template repository for empirical projects with the DHEP group. This allows us to leverage a shared set of settings and organization to make collaboration easy. It also facilitates the use of Reproducible Analytical Pipelines (RAPs), which automate analytical processes from start to finish to ensure reproducability.
+This is a comprehensive template repository for empirical projects with the DHEP group. This allows us to leverage a shared set of settings and organization to make collaboration easy. It also facilitates the use of Reproducible Analytical Pipelines (RAPs), which automate analytical processes from start to finish to ensure reproducibility.
 
-This template draws heavily on the following existing resources:
+This template plagarizes heavily from the following excellent resources:
 
 - [Coding for Economists](https://aeturrell.github.io/coding-for-economists)
 - [Reproducible Data Analytic Workflows for Economics](https://lachlandeer.github.io/snakemake-econ-r-tutorial)
@@ -16,7 +16,7 @@ This template draws heavily on the following existing resources:
 - Environment-specific configuration using [`config`](https://github.com/rstudio/config)
 - A comprehensive [`.gitignore`](./.gitignore) file to keep version tracking history clean
 - A Quarto document with code snippet examples
-- 
+  
 
 ## Prerequisites
 
@@ -70,7 +70,7 @@ After renaming the above files, run the following line of code in your RStudio's
 renv::restore()
 ```
 
-This will install all of the foundational packages needed to begin developing your R project with this template. If installation encounters an error, restart your R session and try again. If it still does not work, please [reach out to the Start Your Lab team](https://www.startyourlab.com/community/support) with your issue and we can help you and your lab resolve it.
+This will install all of the foundational packages needed to begin developing your R project with this template. If installation encounters an error, restart your R session and try again. 
 
 If you would like to install packages specific to your project's goals, now is the time to start! You can install packages like [`tidyverse`](https://www.tidyverse.org/), [`slackr`](https://mrkaye97.github.io/slackr/), or other packages on CRAN. For example, running
 
