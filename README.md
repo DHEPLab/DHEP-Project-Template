@@ -63,7 +63,7 @@ Once the project is cloned to your computer, you need to rename the following fi
 
 ### Local package installation
 
-After renaming the above files, run the following line of code in your RStudio's Console:
+After renaming the above files, open the project in RStudio and run the following line of code in your RStudio's Console:
 
 ```r
 renv::restore()
@@ -107,13 +107,15 @@ Snakefile
 
 - Root Folder (`./`): This is the main folder of the project. Everything that is used or produced for the project should be located in a this folder, or better yet a sub-folder. Think of it as a ‘one-stop shop’ for what you are working on for this project. If it’s important - you must be able to find it here.
 
+- `data-raw/` is where we store raw data files. These are data files that we downloaded from the survey platform or elsewhere. **Never edit or save over these files.** 
+
 - `out/` folder. This is the output directory. We will put anything that we create by running a R script. For example, it can contain new datasets we create by cleaning and merging our original data, saved regression results and saved figures or summary tables. The main point is that anything we can recreate by running R scripts will get saved here - whether they be ‘temporary’ or ‘intermediate’ outputs that will get used by another R script later in our project, or ‘final’ outputs that we will want to insert into a paper, report or slide deck.
 
 - `log/` folder. When we run and R script it produces output and messages, typically printing them to the screen. If we want to save those messages to a file, so we can refer to them in the future, we will save them here.
 
 - `sandbox/` folder. As we work through our project, we will want to explore new ideas and test out how to code them. While we play with these bits and pieces of code, we save them in the sandbox. Separating them from src means we know that R scripts in here are ‘under development’. When they are finalized, we can move them into src.
 
-- `README.md` file. A README is a text file that introduces and explains the project. We should write information that explains what the project is about and how someone can run the scripts developed for the project in this file. We also recommend providing installation instructions to clarify exactly what needs to be installed to run the project.
+- `README.md` file. A README is a text file that introduces and explains the project. We should write information that explains what the project is about and how someone can run the scripts developed for the project in this file. The `README-template.md` file is a template with the typical information that should be included when archiving the project.
 
 - `Snakefile`. We will use the Snakefile to write the steps needed that run all the scripts in the project. Further discussion of Snakefiles are deferred to the next chapter when introduce Snakemake.
 
